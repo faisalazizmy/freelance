@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Dari Zero — Waiting List</title>
+  <meta name="description" content="Course basic untuk orang Malaysia yang nak mula freelance digital. Belajar dari jalan yang sebenar, bukan teori.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 560px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      color: #58a6ff;
+      background: #0d1f3c;
+      border-radius: 20px;
+      padding: 4px 14px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.3;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    h1 .hl { color: #58a6ff; }
+    .sub {
+      font-size: 15px;
+      color: #8b949e;
+      margin-bottom: 36px;
+    }
+
+    .learn { margin-bottom: 36px; }
+    .learn-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #8b949e;
+      margin-bottom: 14px;
+    }
+    .learn-item {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #161b22;
+      font-size: 14.5px;
+    }
+    .learn-item .n {
+      color: #58a6ff;
+      font-weight: 700;
+      font-size: 13px;
+      flex-shrink: 0;
+      width: 20px;
+      padding-top: 1px;
+    }
+
+    .form-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .form-title { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+    .form-sub { font-size: 13px; color: #8b949e; margin-bottom: 20px; }
+    label { display: block; font-size: 13px; color: #c9d1d9; margin-bottom: 6px; font-weight: 500; }
+    input, textarea {
+      width: 100%;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      color: #e6edf3;
+      font-size: 15px;
+      padding: 11px 14px;
+      margin-bottom: 16px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color .15s;
+    }
+    input:focus, textarea:focus { border-color: #58a6ff; }
+    textarea { resize: vertical; min-height: 80px; }
+    .optional { color: #6e7681; font-weight: 400; }
+    button {
+      width: 100%;
+      background: #2ea043;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 13px 0;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background .15s;
+    }
+    button:hover { background: #3fb950; }
+    button:disabled { opacity: .6; cursor: wait; }
+
+    .success {
+      display: none;
+      text-align: center;
+      padding: 32px 16px;
+    }
+    .success .big { font-size: 40px; margin-bottom: 12px; }
+    .success h2 { font-size: 18px; margin-bottom: 8px; }
+    .success p { font-size: 14px; color: #8b949e; }
+
+    .note {
+      font-size: 13px;
+      color: #8b949e;
+      background: #161b22;
+      border-left: 3px solid #58a6ff;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #484f58;
+    }
+    .footer a { color: #8b949e; text-decoration: none; }
+    .err { display: none; color: #f85149; font-size: 13px; margin-top: 10px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="tag">Waiting list dibuka</span>
+
+    <h1>Belajar cara start freelance <span class="hl">dari zero</span>. Tanpa sijil. Tanpa pengalaman.</h1>
+
+    <p class="sub">Course basic untuk orang Malaysia yang nak mula freelance digital tapi tak tahu nak start dari mana. Aku ajar ikut jalan yang aku sendiri lalui, dari kerja free berupah roti dan air, sampai client datang sendiri melalui referral.</p>
+
+    <div class="learn">
+      <div class="learn-title">Apa yang kau akan belajar</div>
+      <div class="learn-item"><span class="n">1</span><span>Cara jumpa skill yang sesuai dengan kau. Mula dengan minat sikit je pun cukup.</span></div>
+      <div class="learn-item"><span class="n">2</span><span>Bina contoh kerja pertama walaupun takde client lagi.</span></div>
+      <div class="learn-item"><span class="n">3</span><span>Dapat kerja atau client pertama guna portfolio, bukan resume.</span></div>
+      <div class="learn-item"><span class="n">4</span><span>Cara approach client dan buat discovery call yang naikkan nilai kau.</span></div>
+      <div class="learn-item"><span class="n">5</span><span>Handle bayaran, quotation dan dokumentasi supaya tak kena tipu.</span></div>
+    </div>
+
+    <div class="form-card">
+      <div id="form-area">
+        <div class="form-title">Masuk waiting list</div>
+        <div class="form-sub">Percuma. Dapat harga early bird bila course launch.</div>
+        <form id="wl-form">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required autocomplete="name">
+
+          <label for="contact">Email atau nombor WhatsApp</label>
+          <input type="text" id="contact" name="contact" required autocomplete="email">
+
+          <label for="struggle">Apa benda paling besar yang tahan kau dari start freelance sekarang? <span class="optional">(optional)</span></label>
+          <textarea id="struggle" name="struggle" placeholder="cerita sikit, aku baca semua"></textarea>
+
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+
+          <button type="submit" id="submit-btn">Masukkan aku dalam list</button>
+          <div class="err" id="err-msg">Ada masalah sikit. Cuba sekali lagi.</div>
+        </form>
+      </div>
+
+      <div class="success" id="success-area">
+        <div class="big">✓</div>
+        <h2>Dah masuk list.</h2>
+        <p>Nanti aku roger bila course dah nak launch. Sementara tu, follow aku kat Threads untuk content freelance setiap hari.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      Nota jujur. Course ni belum siap. Aku buka waiting list dulu sebab nak tahu berapa ramai yang betul betul berminat. Kalau kau masuk list, kau dapat harga early bird bila dia launch, dan pendapat kau akan aku guna masa susun content. Takde bayaran apa apa sekarang.
+    </div>
+
+    <div class="footer">
+      <a href="https://www.threads.net/@fsalz.wfh" target="_blank">@fsalz.wfh</a> — freelancer, masih dalam proses
+    </div>
+  </div>
+
+  <script>
+    // Ganti dengan URL Web App dari Google Apps Script (Deploy > Web app)
+    const SCRIPT_URL = 'GANTI_DENGAN_URL_APPS_SCRIPT';
+
+    document.getElementById('wl-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      if (form.website.value) return; // honeypot bot
+      const btn = document.getElementById('submit-btn');
+      const err = document.getElementById('err-msg');
+      err.style.display = 'none';
+      btn.disabled = true;
+      btn.textContent = 'Sekejap...';
+
+      try {
+        const data = new URLSearchParams();
+        data.append('nama', form.nama.value.trim());
+        data.append('contact', form.contact.value.trim());
+        data.append('struggle', form.struggle.value.trim());
+
+        await fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: data });
+
+        document.getElementById('form-area').style.display = 'none';
+        document.getElementById('success-area').style.display = 'block';
+      } catch (ex) {
+        err.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Masukkan aku dalam list';
+      }
+    });
+  </script>
+</body>
+</html>
