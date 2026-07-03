@@ -75,6 +75,36 @@
       font-size: 13px;
     }
 
+    .mod {
+      background: #fff;
+      border: 2px solid #111;
+      margin-bottom: 14px;
+      padding: 16px 18px;
+    }
+    .mod-head { font-size: 15px; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; }
+    .mod-n {
+      background: #111;
+      color: #FFE800;
+      font-size: 11px;
+      padding: 3px 8px;
+      margin-right: 8px;
+      letter-spacing: 0.05em;
+      vertical-align: 2px;
+    }
+    .mod ul { list-style: none; }
+    .mod li {
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 5px 0 5px 18px;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+    .mod li:last-child { border-bottom: none; }
+    .mod li::before { content: "→"; position: absolute; left: 0; font-weight: 800; }
+    .mod-bonus { background: #111; color: #FFE800; }
+    .mod-bonus .mod-n { background: #FFE800; color: #111; }
+    .mod-bonus li { border-color: rgba(255,232,0,.15); }
+
     .form-card {
       background: #fff;
       border: 3px solid #111;
@@ -150,12 +180,76 @@
     <p class="sub">Course basic untuk orang Malaysia yang nak mula freelance digital tapi tak tahu nak start dari mana. Bukan teori dari buku. Aku ajar langkah yang aku sendiri guna, dari takde portfolio langsung sampai client datang sendiri tanpa perlu cari.</p>
 
     <div class="learn">
-      <div class="learn-title">Apa yang kau akan belajar</div>
-      <div class="learn-item"><span class="n">1</span><span>Cara jumpa skill yang sesuai dengan kau. Mula dengan minat sikit je pun cukup.</span></div>
-      <div class="learn-item"><span class="n">2</span><span>Bina contoh kerja pertama walaupun takde client lagi.</span></div>
-      <div class="learn-item"><span class="n">3</span><span>Dapat kerja atau client pertama guna portfolio, bukan resume.</span></div>
-      <div class="learn-item"><span class="n">4</span><span>Cara approach client dan buat discovery call yang naikkan nilai kau.</span></div>
-      <div class="learn-item"><span class="n">5</span><span>Handle bayaran, quotation dan dokumentasi supaya tak kena tipu.</span></div>
+      <div class="learn-title">Silibus Course</div>
+
+      <div class="mod">
+        <div class="mod-head"><span class="mod-n">Modul 1</span> Kenal Diri, Kenal Skill</div>
+        <ul>
+          <li>Skill inventory: list semua benda yang boleh dibuat, technical dan soft skill</li>
+          <li>Specialist vs generalist, kenapa "buat semua" bunuh peluang</li>
+          <li>Validate skill: boleh ke orang bayar untuk benda ni?</li>
+          <li>Pilih 1 lane utama untuk start (contoh: web design, copywriting, video edit)</li>
+        </ul>
+      </div>
+
+      <div class="mod">
+        <div class="mod-head"><span class="mod-n">Modul 2</span> Setup Asas Sebelum Terima Client</div>
+        <ul>
+          <li>Bina portfolio walaupun takde client: mock project, redesign project sedia ada</li>
+          <li>Bina online presence: LinkedIn, IG/TikTok simple, atau portfolio site</li>
+          <li>Bio dan profile yang jelas, elak ayat generic yang buat client skip</li>
+          <li>Tools asas: track kerja, invoice, komunikasi client (Notion/Trello/WhatsApp Business)</li>
+        </ul>
+      </div>
+
+      <div class="mod">
+        <div class="mod-head"><span class="mod-n">Modul 3</span> Positioning &amp; Pricing Yang Betul</div>
+        <ul>
+          <li>Cari niche, kenapa niche down buat servis lagi senang dijual</li>
+          <li>Struktur pricing: hourly vs project-based vs package</li>
+          <li>Kenapa jangan undercharge, psikologi client bayar murah vs bayar elok</li>
+          <li>Cara buat quotation dan proposal yang confident, bukan "boleh nego"</li>
+        </ul>
+      </div>
+
+      <div class="mod">
+        <div class="mod-head"><span class="mod-n">Modul 4</span> Cari Client Pertama</div>
+        <ul>
+          <li>Platform overview: Upwork, Fiverr, local FB groups, pro dan kontra setiap satu</li>
+          <li>Cold outreach: cara pitch tanpa nampak desperate, dengan script asas</li>
+          <li>Networking: manfaatkan circle sedia ada (kawan, family, community)</li>
+          <li>Red flags client scam dan client susah, cara elak awal-awal</li>
+        </ul>
+      </div>
+
+      <div class="mod">
+        <div class="mod-head"><span class="mod-n">Modul 5</span> Deliver &amp; Repeat</div>
+        <ul>
+          <li>Onboarding client: set expectation dari hari pertama (scope, timeline, revision policy)</li>
+          <li>Cara komunikasi progress supaya client rasa in control</li>
+          <li>Deliver lebih dari janji, kenapa small extra effort besar impact</li>
+          <li>Convert 1 project jadi repeat client dan referral</li>
+        </ul>
+      </div>
+
+      <div class="mod">
+        <div class="mod-head"><span class="mod-n">Modul 6</span> Urus Duit &amp; Legal Asas</div>
+        <ul>
+          <li>Invoice dan payment tracking, simple system untuk start</li>
+          <li>Asas cukai freelancer Malaysia (Borang B), apa kena declare</li>
+          <li>Status di bawah Akta Pekerja Gig 2025, bila relevant bila tak</li>
+          <li>KWSP i-Saraan dan simpanan sendiri, kenapa penting walau freelancer muda</li>
+        </ul>
+      </div>
+
+      <div class="mod mod-bonus">
+        <div class="mod-head"><span class="mod-n">Bonus</span> Scale Dari Freelancer ke Studio</div>
+        <ul>
+          <li>Tanda dah boleh handle lebih dari 1 client</li>
+          <li>Bila mula outsource dan build team kecil</li>
+          <li>Transition freelancer ke studio/agency</li>
+        </ul>
+      </div>
     </div>
 
     <div class="form-card" id="daftar">
